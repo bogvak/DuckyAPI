@@ -70,3 +70,15 @@ Duckypanel will now be live at [localhost:3000](http://localhost:3000), and Duck
 
 ## Task queue
 Any created background tasks and their progress can be viewed on [localhost:3000/queues](http://localhost:3000/queues) with basicauth if you've enabled this in the configuration. Removing a domain or suspending a user will trigger a background task to execute mass changes.
+
+## Docker
+
+To build the Docker image:
+```bash
+docker build -t ducky-api .
+```
+
+To run the Docker container:
+```bash
+docker run -p 3000:3000 ducky-api
+```
